@@ -1,5 +1,7 @@
-/// <reference path="../../../typings/meteor/meteor.d.ts" />
-/// <reference path="../../../typings/phaser/phaser.d.ts" />
+/// <reference path="../../typings/meteor/meteor.d.ts" />
+/// <reference path="../../typings/phaser/phaser.d.ts" />
+
+eval('var GameFromScratch = (this.GameFromScratch || (this.GameFromScratch = {}))'); // https://doctorllama.wordpress.com/2015/04/21/meteor-typescript-classes-and-modules/
 
 module GameFromScratch {
 	export class TitleScreenState extends Phaser.State {

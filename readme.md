@@ -8,10 +8,11 @@
  * Read the readme for configuration steps
  * Requires [meteor-typescript-libs](https://github.com/meteor-typescript/meteor-typescript-libs)
  * [Using Phaser with TypeScript](http://phaser.io/tutorials/how-to-use-phaser-with-typescript)
+ * [Meteor Typescript and Modules](https://doctorllama.wordpress.com/2015/04/21/meteor-typescript-classes-and-modules/)
 
 
 ## Pending links 
 (Not sure if I want what they refer to)
 
-* [Meteor Phaser package](https://atmospherejs.com/robertlowe/meteor-phaser)
+* [Meteor Phaser package](https://atmospherejs.com/robertlowe/meteor-phaser) - [Hanging while building for web](https://github.com/Urigo/angular-meteor/issues/262)
 * [Definitely Typed](http://definitelytyped.org/) - The repository for high quality TypeScript type definitions

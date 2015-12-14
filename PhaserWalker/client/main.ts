@@ -1,6 +1,8 @@
 /// <reference path="../typings/meteor/meteor.d.ts" />
 /// <reference path="../typings/phaser/phaser.d.ts" />
-/// <reference path="resources/states/TitleScreenState.ts" />
+
+/// <reference path="states/TitleScreenState.ts" />
+eval('var GameFromScratch = (this.GameFromScratch || (this.GameFromScratch = {}))'); // https://doctorllama.wordpress.com/2015/04/21/meteor-typescript-classes-and-modules/
 
 module Game {
 	export class ExtremeWalkingSimulator {
@@ -43,6 +45,7 @@ module Game {
 	}
 }
 
+console.log("[+] Game.ExtremeWalkingSimulator module loaded");
 
 if(Meteor.isClient){
 	Template['game'].rendered = function(){
