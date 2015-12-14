@@ -2,6 +2,8 @@
 /// <reference path="../typings/phaser/phaser.d.ts" />
 /// <reference path="states/TitleScreenState.ts" />
 /// <reference path="states/GamePlayState.ts" />
+/// <reference path="states/GameOverState.ts" />
+
 eval('var GameFromScratch = (this.GameFromScratch || (this.GameFromScratch = {}))'); // https://doctorllama.wordpress.com/2015/04/21/meteor-typescript-classes-and-modules/
 
 module Game {
@@ -40,6 +42,7 @@ module Game {
 		create(){
 			this.game.state.add("TitleScreenState", GameFromScratch.TitleScreenState, true);
 			this.game.state.add("GamePlayState", GameFromScratch.GamePlayState, false);
+			this.game.state.add("GameOverState", GameFromScratch.GameOverState, false);
 
 			this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 		}

@@ -40,6 +40,10 @@ module GameFromScratch {
 
 			if(this.playerState == PlayerState.WALKING){
 				this.x += (this.walkingSpeed / Player.MAX_SPEED) * (60 / this.game.time.elapsedMS);
+
+				var stageWidth = this.game.stage.getChildAt(0).getBounds().width;
+				if (this.x > stageWidth * .75)
+					this.x = stageWidth * .25;
 			}
 		}
 
@@ -66,7 +70,9 @@ module GameFromScratch {
 			}
 		}
 
-		GameOver(){}
+		GameOver(){
+			this.game.state.start("GameOverState");
+		}
 
 		StartWalking() {
 			this.playerState = PlayerState.WALKING;
