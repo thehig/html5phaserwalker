@@ -36,10 +36,10 @@ module GameFromScratch {
 		}
 
 		update(){
+			if (this.game.time.elapsedMS == 0) return;
+
 			if(this.playerState == PlayerState.WALKING){
-				// todo: recalculate this value as it's not working as intended
-				var xDelta = (this.walkingSpeed / Player.MAX_SPEED) * (60 / this.game.time.elapsedMS);
-				this.x += xDelta;
+				this.x += (this.walkingSpeed / Player.MAX_SPEED) * (60 / this.game.time.elapsedMS);
 			}
 		}
 

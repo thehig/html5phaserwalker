@@ -4,6 +4,15 @@
 		{
 			"path": ".",
 			"folder_exclude_patterns": ["local"]
+		},
+		{
+			"name": "client",
+			"path": "PhaserWalker/client",
+			"folder_exclude_patterns": ["lib"]
+		},
+		{
+			"name": "resources",
+			"path": "PhaserWalker/public/resources"
 		}
 	]
 }
