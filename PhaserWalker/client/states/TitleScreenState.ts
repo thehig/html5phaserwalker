@@ -23,6 +23,12 @@ module GameFromScratch {
 			this.music.volume = 100;
 			this.music.loop = true;
 			this.music.play();
+			this.input.onTap.addOnce(this.titleClicked, this);
+		}
+
+		titleClicked(){
+			this.music.stop();
+			this.game.state.start("GamePlayState");
 		}
 	}
 }

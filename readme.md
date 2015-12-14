@@ -9,7 +9,7 @@
  * Requires [meteor-typescript-libs](https://github.com/meteor-typescript/meteor-typescript-libs)
  * [Using Phaser with TypeScript](http://phaser.io/tutorials/how-to-use-phaser-with-typescript)
  * [Meteor Typescript and Modules](https://doctorllama.wordpress.com/2015/04/21/meteor-typescript-classes-and-modules/)
-
+* [Texture Packer](https://www.codeandweb.com/texturepacker) - tool for creating sprite sheets
 
 ## Pending links 
 (Not sure if I want what they refer to)
